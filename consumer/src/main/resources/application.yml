@@ -1,0 +1,13 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: consumer
+
+dubbo:
+  protocol:
+    name: tri
+    port: -1
+  registry:
+    id: zk-zookeeper
+    address: zookeeper://127.0.0.1:2181
